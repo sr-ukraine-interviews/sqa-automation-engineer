@@ -148,8 +148,25 @@ curl -s "https://crt.sh/?q=${TARGET}&output=json"
 </section>
 
 <section>
+<pre style="margin-bottom: 0px;">
+7. Test Automation
+Describe your experience with static / dynamic analysis tools.
+
+TV gets into frozen state randomly. You suspect a concurrency issue.
+- How will you localize the root cause? 
+- How to automate the detection of such issues at various SLDC phases?
+</pre>		
+<img src="images/afl500-109032979.png" width="500px">
+<pre style="margin-top: 0px;">
+<label for="a7">Your answer: </label>
+<textarea type="text" id="a7" name="a7" cols="113" rows="10">
+</textarea>
+</pre>
+</section>
+
+<section>
 <pre>
-7. Please evaluate your expertise in a number of tech. domains.
+8. Please evaluate your expertise in a number of tech. domains.
 This will help to adjust expectations, interview questions, salary rates.
 </pre>
 <div style="height: 400px; overflow-y:scroll;">
@@ -432,6 +449,66 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="xray_mid"    name="xray" value="5"></td>
 			<td><input type="radio" id="xray_expert" name="xray" value="10"></td>
 		</tr>	
+		<tr>
+			<td colspan="5" align="center">Static/Dynamic analysis tools  </td>
+		</tr>		
+		<tr>
+			<th>Domain</th>
+			<th>None</th>
+			<th>Basic</th>
+			<th>Advanced</th>
+			<th>Expert</th>
+		</tr>
+		<tr>
+			<td>gcc/clang sanitizers</td>
+			<td><input type="radio" id="sanitizers_none"   name="sanitizers" value="0" checked></td>
+			<td><input type="radio" id="sanitizers_basic"  name="sanitizers" value="1"></td>
+			<td><input type="radio" id="sanitizers_mid"    name="sanitizers" value="5"></td>
+			<td><input type="radio" id="sanitizers_expert" name="sanitizers" value="10"></td>
+		</tr>				
+		<tr>
+			<td>Clang Static Analyzer</td>
+			<td><input type="radio" id="clang_none"   name="clang" value="0" checked></td>
+			<td><input type="radio" id="clang_basic"  name="clang" value="1"></td>
+			<td><input type="radio" id="clang_mid"    name="clang" value="5"></td>
+			<td><input type="radio" id="clang_expert" name="clang" value="10"></td>
+		</tr>			
+		<tr>
+			<td>AFL (American Fuzzy Lop)</td>
+			<td><input type="radio" id="afl_none"   name="afl" value="0" checked></td>
+			<td><input type="radio" id="afl_basic"  name="afl" value="1"></td>
+			<td><input type="radio" id="afl_mid"    name="afl" value="5"></td>
+			<td><input type="radio" id="afl_expert" name="afl" value="10"></td>
+		</tr>	
+		<tr>
+			<td>Sonar</td>
+			<td><input type="radio" id="sonar_none"   name="sonar" value="0" checked></td>
+			<td><input type="radio" id="sonar_basic"  name="sonar" value="1"></td>
+			<td><input type="radio" id="sonar_mid"    name="sonar" value="5"></td>
+			<td><input type="radio" id="sonar_expert" name="sonar" value="10"></td>
+		</tr>		
+		<tr>
+			<td>Coverity</td>
+			<td><input type="radio" id="coverity_none"   name="coverity" value="0" checked></td>
+			<td><input type="radio" id="coverity_basic"  name="coverity" value="1"></td>
+			<td><input type="radio" id="coverity_mid"    name="coverity" value="5"></td>
+			<td><input type="radio" id="coverity_expert" name="coverity" value="10"></td>
+		</tr>	
+		<tr>
+			<td>Klocwork</td>
+			<td><input type="radio" id="klocwork_none"   name="klocwork" value="0" checked></td>
+			<td><input type="radio" id="klocwork_basic"  name="klocwork" value="1"></td>
+			<td><input type="radio" id="klocwork_mid"    name="klocwork" value="5"></td>
+			<td><input type="radio" id="klocwork_expert" name="klocwork" value="10"></td>
+		</tr>
+		<tr>
+			<td>Valgrind</td>
+			<td><input type="radio" id="valgrind_none"   name="valgrind" value="0" checked></td>
+			<td><input type="radio" id="valgrind_basic"  name="valgrind" value="1"></td>
+			<td><input type="radio" id="valgrind_mid"    name="valgrind" value="5"></td>
+			<td><input type="radio" id="valgrind_expert" name="valgrind" value="10"></td>
+		</tr>		
+		
 
 	</table>		
 </small>	
