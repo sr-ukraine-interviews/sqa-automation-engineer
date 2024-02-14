@@ -67,9 +67,9 @@ Which metrics would you use?
 </section>
 
 <section data-auto-animate>
-<pre>
+<pre style="margin-bottom: 0px;">
 3. Embedded devices SQA automation experience<br>
-Supposed there is a target phone that is used in exclusive mode remotely 
+There is a target phone that is used in exclusive mode remotely 
 (no parallel test execution is possible). 
 How would you organize automated concurrent testing?
 </pre>
@@ -85,7 +85,7 @@ How would you organize automated concurrent testing?
 <pre style="margin-bottom: 0px;">
 4. Containers / emulators / simulators
 <smaller>
-Let us understand your expertize with Docker, QEMU, XenN, GEM5, Singularity.
+What is your expertize with Docker, QEMU, XenN, GEM5, Singularity?
 Give scenarios where you would prefer:
 - virtualization
 - containerization
@@ -103,34 +103,29 @@ Give examples from your commercial experience.
 
 <section data-auto-animate>
 <pre>
-5. The following question covers Linux Device Model understanding<br>
-<small>
-A WEB camera is inserted into USB hub. Briefly describe what happens next: 
-- how Linux Kernel detects new device and looks for a driver
-- what is the device initialization procedure, up until it appears in /dev
-</small>
+5. Linux permissions (DAC, MAC)<br>
+A share folder /home/qa/share is needed for a group of engineers.
+Inconvenience is that just giving group permissions is not enough:
+by default the one who creates a sub-folder becomes the owner, 
+thus nobody else can either access or delete this new sub-folder.
+Propose a way to configure Linux permissions in a way to fix it.
 </pre>
-<img src="images/laboratoare-plug_and_play-linux_device_model_structures.png" width="500px" style="margin: 0px;">
-<pre>
+<img src="images/Linux-Logo-PNG-1928184857.png" width="150px">
+<pre style="margin-top: 0px;">
 <label for="a5">Your answer: </label>
 <textarea type="text" id="a5" name="a5" cols="113" rows="10">
 </textarea>
 </pre>
 </section>
 
-<section data-auto-animate>
-<pre>
-6. The following question covers understanding of applied crypto<br>
-<small>
-You are challenged to build a simple peer-to-peer chat (2 peers, simple text). 
-Describe basic security needs. Suggest algorighms and protocols to cover these needs. At least, consider:
-- initial trust establishment
-- communication channel security
-Comments on strong/weak crypto, advanced features (forward secrecy oth.) and examples from industry are welcome.
-</small>
+<section data-visibility="hidden">
+<pre style="margin-bottom: 0px;">
+6. Linux utilities (nc, sed, awk, tr, cat, mount, oth.)<br>
+
+To be added soon
 </pre>
-<img src="images/Alice-bob-mallory.jpg" width="400px" style="margin: 0px;">
-<pre>
+<img src="images/original-1235189949.jpg" width="100px" style="margin: 0px;">
+<pre style="margin-top: 0px;">
 <label for="a6">Your answer: </label>
 <textarea type="text" id="a6" name="a6" cols="113" rows="10">
 </textarea>
@@ -152,11 +147,25 @@ This will help to adjust expectations, interview questions and salary rates.
 			<th>Domain</th>
 			<th>None</th>
 			<th>Basic</th>
-			<th>Daily use</th>
+			<th>Advanced</th>
 			<th>Expert</th>
 		</tr>
 		<tr>
-			<td>C</td>
+			<td>Python</td>
+			<td><input type="radio" id="python_none"   name="python" value="0" checked></td>
+			<td><input type="radio" id="python_basic"  name="python" value="1"></td>
+			<td><input type="radio" id="python_mid"    name="python" value="5"></td>
+			<td><input type="radio" id="python_expert" name="python" value="10"></td>
+		</tr>
+		<tr>
+			<td>Bash</td>
+			<td><input type="radio" id="bash_none"   name="bash" value="0" checked></td>
+			<td><input type="radio" id="bash_basic"  name="bash" value="1"></td>
+			<td><input type="radio" id="bash_mid"    name="bash" value="5"></td>
+			<td><input type="radio" id="bash_expert" name="bash" value="10"></td>
+		</tr>				
+		<tr>
+			<td>Python</td>
 			<td><input type="radio" id="c_none"   name="c" value="0" checked></td>
 			<td><input type="radio" id="c_basic"  name="c" value="1"></td>
 			<td><input type="radio" id="c_mid"    name="c" value="5"></td>
@@ -170,88 +179,102 @@ This will help to adjust expectations, interview questions and salary rates.
 			<td><input type="radio" id="java_expert" name="java" value="10"></td>
 		</tr>
 		<tr>
-			<td>Python</td>
-			<td><input type="radio" id="python_none"   name="python" value="0" checked></td>
-			<td><input type="radio" id="python_basic"  name="python" value="1"></td>
-			<td><input type="radio" id="python_mid"    name="python" value="5"></td>
-			<td><input type="radio" id="python_expert" name="python" value="10"></td>
-		</tr>	
-		<tr>
-			<td>Kotlin</td>
-			<td><input type="radio" id="kotlin_none"   name="kotlin" value="0" checked></td>
-			<td><input type="radio" id="kotlin_basic"  name="kotlin" value="1"></td>
-			<td><input type="radio" id="kotlin_mid"    name="kotlin" value="5"></td>
-			<td><input type="radio" id="kotlin_expert" name="kotlin" value="10"></td>
-		</tr>
-		<tr>
-			<td colspan="5" align="center">Linux development experience</td>
+			<td colspan="5" align="center">Build & Dependency Management Tools</td>
 		</tr>					
 		<tr>
 			<th>Domain</th>
 			<th>None</th>
 			<th>Basic</th>
-			<th>Daily use</th>
+			<th>Advanced</th>
 			<th>Expert</th>
 		</tr>
 		<tr>
-			<td>Device drivers development</td>
-			<td><input type="radio" id="devdriv_none"   name="devdriv" value="0" checked></td>
-			<td><input type="radio" id="devdriv_basic"  name="devdriv" value="1"></td>
-			<td><input type="radio" id="devdriv_mid"    name="devdriv" value="5"></td>
-			<td><input type="radio" id="devdriv_expert" name="devdriv" value="10"></td>
+			<td>Make</td>
+			<td><input type="radio" id="make_none"   name="make" value="0" checked></td>
+			<td><input type="radio" id="make_basic"  name="make" value="1"></td>
+			<td><input type="radio" id="make_mid"    name="make" value="5"></td>
+			<td><input type="radio" id="make_expert" name="make" value="10"></td>
 		</tr>
 		<tr>
-			<td>Generic Linux modules development</td>
-			<td><input type="radio" id="linmod_none"   name="linmod" value="0" checked></td>
-			<td><input type="radio" id="linmod_basic"  name="linmod" value="1"></td>
-			<td><input type="radio" id="linmod_mid"    name="linmod" value="5"></td>
-			<td><input type="radio" id="linmod_expert" name="linmod" value="10"></td>
+			<td>CMake</td>
+			<td><input type="radio" id="cmake_none"   name="cmake" value="0" checked></td>
+			<td><input type="radio" id="cmake_basic"  name="cmake" value="1"></td>
+			<td><input type="radio" id="cmake_mid"    name="cmake" value="5"></td>
+			<td><input type="radio" id="cmake_expert" name="cmake" value="10"></td>
 		</tr>
 		<tr>
-			<td>Network filter drivers development</td>
-			<td><input type="radio" id="netwfilt_none"   name="netwfilt" value="0" checked></td>
-			<td><input type="radio" id="netwfilt_basic"  name="netwfilt" value="1"></td>
-			<td><input type="radio" id="netwfilt_mid"    name="netwfilt" value="5"></td>
-			<td><input type="radio" id="netwfilt_expert" name="netwfilt" value="10"></td>
+			<td>Maven</td>
+			<td><input type="radio" id="maven_none"   name="maven" value="0" checked></td>
+			<td><input type="radio" id="maven_basic"  name="maven" value="1"></td>
+			<td><input type="radio" id="maven_mid"    name="maven" value="5"></td>
+			<td><input type="radio" id="maven_expert" name="maven" value="10"></td>
 		</tr>	
 		<tr>
-			<td colspan="5" align="center">Android development experience</td>
+			<td>Gradle</td>
+			<td><input type="radio" id="gradle_none"   name="gradle" value="0" checked></td>
+			<td><input type="radio" id="gradle_basic"  name="gradle" value="1"></td>
+			<td><input type="radio" id="gradle_mid"    name="gradle" value="5"></td>
+			<td><input type="radio" id="gradle_expert" name="gradle" value="10"></td>
+		</tr>	
+		<tr>
+			<td>npm</td>
+			<td><input type="radio" id="npm_none"   name="npm" value="0" checked></td>
+			<td><input type="radio" id="npm_basic"  name="npm" value="1"></td>
+			<td><input type="radio" id="npm_mid"    name="npm" value="5"></td>
+			<td><input type="radio" id="npm_expert" name="npm" value="10"></td>
+		</tr>				
+		<tr>
+			<td colspan="5" align="center">Continuous Integration</td>
 		</tr>		
 		<tr>
 			<th>Domain</th>
 			<th>None</th>
 			<th>Basic</th>
-			<th>Daily use</th>
+			<th>Advanced</th>
 			<th>Expert</th>
 		</tr>
 		<tr>
-			<td>NDK, native code development</td>
-			<td><input type="radio" id="ndk_none"   name="ndk" value="0" checked></td>
-			<td><input type="radio" id="ndk_basic"  name="ndk" value="1"></td>
-			<td><input type="radio" id="ndk_mid"    name="ndk" value="5"></td>
-			<td><input type="radio" id="ndk_expert" name="ndk" value="10"></td>
+			<td>GitHub Actions</td>
+			<td><input type="radio" id="ghactions_none"   name="ghactions" value="0" checked></td>
+			<td><input type="radio" id="ghactions_basic"  name="ghactions" value="1"></td>
+			<td><input type="radio" id="ghactions_mid"    name="ghactions" value="5"></td>
+			<td><input type="radio" id="ghactions_expert" name="ghactions" value="10"></td>
 		</tr>
 		<tr>
-			<td>Overall understanding of Android architecture</td>
-			<td><input type="radio" id="andrarch_none"   name="andrarch" value="0" checked></td>
-			<td><input type="radio" id="andrarch_basic"  name="andrarch" value="1"></td>
-			<td><input type="radio" id="andrarch_mid"    name="andrarch" value="5"></td>
-			<td><input type="radio" id="andrarch_expert" name="andrarch" value="10"></td>
+			<td>GitLab CI/CD</td>
+			<td><input type="radio" id="glcicd_none"   name="glcicd" value="0" checked></td>
+			<td><input type="radio" id="glcicd_basic"  name="glcicd" value="1"></td>
+			<td><input type="radio" id="glcicd_mid"    name="glcicd" value="5"></td>
+			<td><input type="radio" id="glcicd_expert" name="glcicd" value="10"></td>
 		</tr>
 		<tr>
-			<td>Understanding of Android security model</td>
-			<td><input type="radio" id="andrsecc_none"   name="andrsecc" value="0" checked></td>
-			<td><input type="radio" id="andrsecc_basic"  name="andrsecc" value="1"></td>
-			<td><input type="radio" id="andrsecc_mid"    name="andrsecc" value="5"></td>
-			<td><input type="radio" id="andrsecc_expert" name="andrsecc" value="10"></td>
+			<td>Jenkins</td>
+			<td><input type="radio" id="jenkins_none"   name="jenkins" value="0" checked></td>
+			<td><input type="radio" id="jenkins_basic"  name="jenkins" value="1"></td>
+			<td><input type="radio" id="jenkins_mid"    name="jenkins" value="5"></td>
+			<td><input type="radio" id="jenkins_expert" name="jenkins" value="10"></td>
 		</tr>		
 		<tr>
-			<td>Android initialization process and init.rc system</td>
-			<td><input type="radio" id="andrinitrc_none"     name="andrinitrc" value="0" checked></td>
-			<td><input type="radio" id="andrinitrc_basic"  name="andrinitrc" value="1"></td>
-			<td><input type="radio" id="andrinitrc_mid"    name="andrinitrc" value="5"></td>
-			<td><input type="radio" id="andrinitrc_expert" name="andrinitrc" value="10"></td>
+			<td>Bamboo</td>
+			<td><input type="radio" id="bamboo_none"   name="bamboo" value="0" checked></td>
+			<td><input type="radio" id="bamboo_basic"  name="bamboo" value="1"></td>
+			<td><input type="radio" id="bamboo_mid"    name="bamboo" value="5"></td>
+			<td><input type="radio" id="bamboo_expert" name="bamboo" value="10"></td>
 		</tr>	
+		<tr>
+			<td>TeamCity</td>
+			<td><input type="radio" id="teamcity_none"   name="teamcity" value="0" checked></td>
+			<td><input type="radio" id="teamcity_basic"  name="teamcity" value="1"></td>
+			<td><input type="radio" id="teamcity_mid"    name="teamcity" value="5"></td>
+			<td><input type="radio" id="teamcity_expert" name="teamcity" value="10"></td>
+		</tr>	
+		<tr>
+			<td>CircleCI</td>
+			<td><input type="radio" id="circleci_none"   name="circleci" value="0" checked></td>
+			<td><input type="radio" id="circleci_basic"  name="circleci" value="1"></td>
+			<td><input type="radio" id="circleci_mid"    name="circleci" value="5"></td>
+			<td><input type="radio" id="circleci_expert" name="circleci" value="10"></td>
+		</tr>				
 	</table>		
 </small>	
 </div>		
