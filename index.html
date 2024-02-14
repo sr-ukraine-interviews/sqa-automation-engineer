@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SQA Automation Engineer</title>
+
+		<link rel="stylesheet" href="reveal/reset.css">
+		<link rel="stylesheet" href="reveal/reveal.css">
+		<link rel="stylesheet" href="reveal/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		
+		<div class="reveal">
+			<form action="/demo.html" method="POST">
+			<input type="hidden" id="surveyId" name="surveyId" value="sqa-automation-engineer">
+			
+			<div class="slides"> 
+
+<section>
+	<h3>SQA Automation Engineer</h3>
+	<p>
+		<small>pre-interview survey</small>
+	</p>
+</section>
+
+<section>
+	<h4>Enter ID received from HR manager</h4>
+	<p>
+		<input type="text" id="candidate_id" name="candidate_id" style="font-size:24px;">
+	</p>
+</section>				
+
+<section data-auto-animate>
+<pre>
+1. Do you have any formal SQA / DevOps / SecDevOps / AQA education or certification?<br>
+Suppose you have to formally evaluate connection stability 
+between a phone and a wearable device.
+How would you implement a. load testing b. stress testing?
+</pre>
+<img src="images/samsung_galaxy_buds_true_wireless_earbuds_2-1053550948.jpg" width="200px" style="margin: 0px;">
+<pre>
+<label for="a1">Your answer: </label>
+<textarea type="text" id="a1" name="a1" cols="113" rows="10">
+</textarea>
+</pre>
+</section>
+
+<section data-auto-animate>
+<pre>
+2. Describe shortly your embedded devices SQA experience.<br>
+How would you organize automated concurrent testing on a single hardware device.
+</pre>
+<img src="images/1067.1531244472-670301423.png" width="400px" style="margin: 0px;">
+<pre>
+<label for="a2">Your answer: </label>
+<textarea type="text" id="a2" name="a2" cols="113" rows="10">
+</textarea>
+</pre>
+</section>	
+
+
+
+<section data-auto-animate>
+<pre>
+3. Give some comments about the following string reverse algorithm.<br>
+What is its speed? Propose an algorithm with the speed O(n²).
+</pre>
+<pre data-id="code-animation" style="font-size:14px;">
+<code class="language-c" data-trim data-line-numbers >
+#define XOR_SWAP(a,b) do\
+{\
+	a ^= b;\
+	b ^= a;\
+	a ^= b;\
+} while (0)
+
+void inplace_reverse(const char* str)
+{
+    char* end = str + strlen(str) - 1;
+    while (str < end)
+    {
+      XOR_SWAP(*str, *end);
+      str++;
+      end--;
+    }
+}
+</code>
+</pre>				
+<pre>
+<label for="a3">Your answer: </label>
+<textarea type="text" id="a3" name="a3" cols="113" rows="10">
+</textarea>
+</pre>
+</section>
+
+<section data-auto-animate>
+<pre>
+4. Consider the following string reverse algorithm<br>
+<small>
+Letters A,...,F are written on cards. Cards are randomly picked in some order, like [C, D, F, B, A, E].<br>
+If reverse order [F, E, D, C, B, A] is received, the algorithm terminates.<br>
+On average, how many trials is needed to get reversed string? Strict math proof would be best (use LaTeX syntax).<br>
+What is the speed of such string reverse algorithm?
+</small>
+</pre>
+<img src="images/sixletters.png" width="300px">
+<pre>
+<label for="a4">Your answer: </label>
+<textarea type="text" id="a4" name="a4" cols="113" rows="10">
+</textarea>
+</pre>
+</section>
+
+<section data-auto-animate>
+<pre>
+5. The following question covers Linux Device Model understanding<br>
+<small>
+A WEB camera is inserted into USB hub. Briefly describe what happens next: 
+- how Linux Kernel detects new device and looks for a driver
+- what is the device initialization procedure, up until it appears in /dev
+</small>
+</pre>
+<img src="images/laboratoare-plug_and_play-linux_device_model_structures.png" width="500px" style="margin: 0px;">
+<pre>
+<label for="a5">Your answer: </label>
+<textarea type="text" id="a5" name="a5" cols="113" rows="10">
+</textarea>
+</pre>
+</section>
+
+<section data-auto-animate>
+<pre>
+6. The following question covers understanding of applied crypto<br>
+<small>
+You are challenged to build a simple peer-to-peer chat (2 peers, simple text). 
+Describe basic security needs. Suggest algorighms and protocols to cover these needs. At least, consider:
+- initial trust establishment
+- communication channel security
+Comments on strong/weak crypto, advanced features (forward secrecy oth.) and examples from industry are welcome.
+</small>
+</pre>
+<img src="images/Alice-bob-mallory.jpg" width="400px" style="margin: 0px;">
+<pre>
+<label for="a6">Your answer: </label>
+<textarea type="text" id="a6" name="a6" cols="113" rows="10">
+</textarea>
+</pre>
+</section>
+
+<section>
+<pre>
+Please evaluate your expertise in various domains.<br>
+This will help to adjust expectations, interview questions and salary rates.
+</pre>
+<div style="height: 400px; overflow-y:scroll;">
+<small>
+	<table>
+		<tr>
+			<td colspan="5" align="center">Programming languages portfolio</td>
+		</tr>		
+		<tr>
+			<th>Domain</th>
+			<th>None</th>
+			<th>Basic</th>
+			<th>Daily use</th>
+			<th>Expert</th>
+		</tr>
+		<tr>
+			<td>C</td>
+			<td><input type="radio" id="c_none"   name="c" value="0" checked></td>
+			<td><input type="radio" id="c_basic"  name="c" value="1"></td>
+			<td><input type="radio" id="c_mid"    name="c" value="5"></td>
+			<td><input type="radio" id="c_expert" name="c" value="10"></td>
+		</tr>
+		<tr>
+			<td>Java</td>
+			<td><input type="radio" id="java_none"   name="java" value="0" checked></td>
+			<td><input type="radio" id="java_basic"  name="java" value="1"></td>
+			<td><input type="radio" id="java_mid"    name="java" value="5"></td>
+			<td><input type="radio" id="java_expert" name="java" value="10"></td>
+		</tr>
+		<tr>
+			<td>Python</td>
+			<td><input type="radio" id="python_none"   name="python" value="0" checked></td>
+			<td><input type="radio" id="python_basic"  name="python" value="1"></td>
+			<td><input type="radio" id="python_mid"    name="python" value="5"></td>
+			<td><input type="radio" id="python_expert" name="python" value="10"></td>
+		</tr>	
+		<tr>
+			<td>Kotlin</td>
+			<td><input type="radio" id="kotlin_none"   name="kotlin" value="0" checked></td>
+			<td><input type="radio" id="kotlin_basic"  name="kotlin" value="1"></td>
+			<td><input type="radio" id="kotlin_mid"    name="kotlin" value="5"></td>
+			<td><input type="radio" id="kotlin_expert" name="kotlin" value="10"></td>
+		</tr>
+		<tr>
+			<td colspan="5" align="center">Linux development experience</td>
+		</tr>					
+		<tr>
+			<th>Domain</th>
+			<th>None</th>
+			<th>Basic</th>
+			<th>Daily use</th>
+			<th>Expert</th>
+		</tr>
+		<tr>
+			<td>Device drivers development</td>
+			<td><input type="radio" id="devdriv_none"   name="devdriv" value="0" checked></td>
+			<td><input type="radio" id="devdriv_basic"  name="devdriv" value="1"></td>
+			<td><input type="radio" id="devdriv_mid"    name="devdriv" value="5"></td>
+			<td><input type="radio" id="devdriv_expert" name="devdriv" value="10"></td>
+		</tr>
+		<tr>
+			<td>Generic Linux modules development</td>
+			<td><input type="radio" id="linmod_none"   name="linmod" value="0" checked></td>
+			<td><input type="radio" id="linmod_basic"  name="linmod" value="1"></td>
+			<td><input type="radio" id="linmod_mid"    name="linmod" value="5"></td>
+			<td><input type="radio" id="linmod_expert" name="linmod" value="10"></td>
+		</tr>
+		<tr>
+			<td>Network filter drivers development</td>
+			<td><input type="radio" id="netwfilt_none"   name="netwfilt" value="0" checked></td>
+			<td><input type="radio" id="netwfilt_basic"  name="netwfilt" value="1"></td>
+			<td><input type="radio" id="netwfilt_mid"    name="netwfilt" value="5"></td>
+			<td><input type="radio" id="netwfilt_expert" name="netwfilt" value="10"></td>
+		</tr>	
+		<tr>
+			<td colspan="5" align="center">Android development experience</td>
+		</tr>		
+		<tr>
+			<th>Domain</th>
+			<th>None</th>
+			<th>Basic</th>
+			<th>Daily use</th>
+			<th>Expert</th>
+		</tr>
+		<tr>
+			<td>NDK, native code development</td>
+			<td><input type="radio" id="ndk_none"   name="ndk" value="0" checked></td>
+			<td><input type="radio" id="ndk_basic"  name="ndk" value="1"></td>
+			<td><input type="radio" id="ndk_mid"    name="ndk" value="5"></td>
+			<td><input type="radio" id="ndk_expert" name="ndk" value="10"></td>
+		</tr>
+		<tr>
+			<td>Overall understanding of Android architecture</td>
+			<td><input type="radio" id="andrarch_none"   name="andrarch" value="0" checked></td>
+			<td><input type="radio" id="andrarch_basic"  name="andrarch" value="1"></td>
+			<td><input type="radio" id="andrarch_mid"    name="andrarch" value="5"></td>
+			<td><input type="radio" id="andrarch_expert" name="andrarch" value="10"></td>
+		</tr>
+		<tr>
+			<td>Understanding of Android security model</td>
+			<td><input type="radio" id="andrsecc_none"   name="andrsecc" value="0" checked></td>
+			<td><input type="radio" id="andrsecc_basic"  name="andrsecc" value="1"></td>
+			<td><input type="radio" id="andrsecc_mid"    name="andrsecc" value="5"></td>
+			<td><input type="radio" id="andrsecc_expert" name="andrsecc" value="10"></td>
+		</tr>		
+		<tr>
+			<td>Android initialization process and init.rc system</td>
+			<td><input type="radio" id="andrinitrc_none"     name="andrinitrc" value="0" checked></td>
+			<td><input type="radio" id="andrinitrc_basic"  name="andrinitrc" value="1"></td>
+			<td><input type="radio" id="andrinitrc_mid"    name="andrinitrc" value="5"></td>
+			<td><input type="radio" id="andrinitrc_expert" name="andrinitrc" value="10"></td>
+		</tr>	
+	</table>		
+</small>	
+</div>		
+<pre>
+<label for="comments">Comments: </label>
+<textarea type="text" id="comments" name="comments" cols="113" rows="5">
+</textarea>
+</pre>
+</section>
+
+		
+<section data-visibility="hidden">
+<pre>
+3. Describe nuances of using static keyword.<br>
+Which type of memory is used for storing such variables?<br>
+Which best practices or typical situations do you know where static keyword helps?
+</pre>
+<pre data-id="code-animation">
+<code class="language-c" data-trim data-line-numbers>
+	a.h
+	static int a1;
+
+	b.c
+	#include "a.h"
+	int f()
+	{
+		a1 = 1;
+	}	
+</code>
+</pre>				
+<pre>
+<label for="a9">Your answer: </label>
+<textarea type="text" id="a9" name="a9" cols="113" rows="10">
+</textarea>
+</pre>
+</section>
+
+<section>
+	<h4>Submit Survey</h4>
+	<input type="submit" value="Send" style="font-size:24px; cursor: pointer;">
+</section>
+				
+		
+			</div>
+		</form>
+		</div>
+	
+
+		<script src="reveal/reveal.js"></script>
+		<!-- <script src="plugin/notes/notes.js"></script> -->
+		<!-- <script src="plugin/markdown/markdown.js"></script> -->
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				// plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				plugins: [ RevealHighlight ],
+
+				// Determines where controls appear, "edges" or "bottom-right"
+                controlsLayout: 'bottom-right',
+
+			});
+		</script>
+	
+	</body>
+</html>
