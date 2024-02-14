@@ -30,12 +30,13 @@
 
 <section>
 	<h4>Enter ID received from HR manager</h4>
+	(or your name)
 	<p>
 		<input type="text" id="candidate_id" name="candidate_id" style="font-size:24px;">
 	</p>
 </section>				
 
-<section data-auto-animate>
+<section>
 <pre>
 1. Quality Assurance studies, certification, trainings<br>
 Do you have any SQA / DevOps / SecDevOps / AQA education or certification?
@@ -50,7 +51,7 @@ you have from the respected 3rd-parties.
 </pre>
 </section>
 
-<section data-auto-animate>
+<section>
 <pre>
 2. SQA theory basics<br>
 Suppose you have to evaluate connection stability 
@@ -66,7 +67,7 @@ Which metrics would you use?
 </pre>
 </section>
 
-<section data-auto-animate>
+<section>
 <pre style="margin-bottom: 0px;">
 3. Embedded devices SQA automation experience<br>
 There is a target phone that is used in exclusive mode remotely 
@@ -81,7 +82,7 @@ How would you organize automated concurrent testing?
 </pre>
 </section>
 
-<section data-auto-animate>
+<section>
 <pre style="margin-bottom: 0px;">
 4. Containers / emulators / simulators
 <smaller>
@@ -101,10 +102,10 @@ Give examples from your commercial experience.
 </pre>
 </section>
 
-<section data-auto-animate>
+<section>
 <pre>
 5. Linux permissions (DAC, MAC)<br>
-A share folder /home/qa/share is needed for a group of engineers.
+A share folder /home/share is needed for a group of engineers.
 Inconvenience is that just giving group permissions is not enough:
 by default the one who creates a sub-folder becomes the owner, 
 thus nobody else can either access or delete this new sub-folder.
@@ -118,19 +119,39 @@ Propose a way to configure Linux permissions in a way to fix it.
 </pre>
 </section>
 
-<section data-visibility="hidden">
+<section>
 <pre style="margin-bottom: 0px;">
-6. Linux utilities (nc, sed, awk, tr, cat, mount, oth.)<br>
+6. Bash and Linux utilities
+<smaller style="margin-bottom: 0px;">
+Daily routine with embedded devices test automation 
+requires bash and Linux utilities such as: 
+grep, nc, wget, curl, jq, sed, awk, tr, sshfs, dd, df, mount
 
-To be added soon
+An automatic sub-domains extraction is needed from httpS certificates.
+Write bash script that:
+- takes a domain as an input
+- sends a request to https://crt.sh to retrieve its certificate
+- produces a list of sub-domains found in the certificate
+</smaller>
 </pre>
-<img src="images/original-1235189949.jpg" width="100px" style="margin: 0px;">
+<pre data-id="code-animation" style="margin-top: 0px;">
+<code class="language-bash" data-trim data-line-numbers>
+EXPORT target="some.domain.com"
+curl -s "https://crt.sh/?q=${TARGET}&output=json"
+</code>
+</pre>		
 <pre style="margin-top: 0px;">
 <label for="a6">Your answer: </label>
 <textarea type="text" id="a6" name="a6" cols="113" rows="10">
 </textarea>
 </pre>
 </section>
+
+
+
+
+
+
 
 <section>
 <pre>
@@ -274,7 +295,45 @@ This will help to adjust expectations, interview questions and salary rates.
 			<td><input type="radio" id="circleci_basic"  name="circleci" value="1"></td>
 			<td><input type="radio" id="circleci_mid"    name="circleci" value="5"></td>
 			<td><input type="radio" id="circleci_expert" name="circleci" value="10"></td>
-		</tr>				
+		</tr>	
+		<tr>
+			<td colspan="5" align="center">Databases</td>
+		</tr>		
+		<tr>
+			<th>Domain</th>
+			<th>None</th>
+			<th>Basic</th>
+			<th>Advanced</th>
+			<th>Expert</th>
+		</tr>
+		<tr>
+			<td>MySQL</td>
+			<td><input type="radio" id="mysql_none"   name="mysql" value="0" checked></td>
+			<td><input type="radio" id="mysql_basic"  name="mysql" value="1"></td>
+			<td><input type="radio" id="mysql_mid"    name="mysql" value="5"></td>
+			<td><input type="radio" id="mysql_expert" name="mysql" value="10"></td>
+		</tr>	
+		<tr>
+			<td>PostgreSQL</td>
+			<td><input type="radio" id="postgresql_none"   name="postgresql" value="0" checked></td>
+			<td><input type="radio" id="postgresql_basic"  name="postgresql" value="1"></td>
+			<td><input type="radio" id="postgresql_mid"    name="postgresql" value="5"></td>
+			<td><input type="radio" id="postgresql_expert" name="postgresql" value="10"></td>
+		</tr>		
+		<tr>
+			<td>MongoDB</td>
+			<td><input type="radio" id="mongodb_none"   name="mongodb" value="0" checked></td>
+			<td><input type="radio" id="mongodb_basic"  name="mongodb" value="1"></td>
+			<td><input type="radio" id="mongodb_mid"    name="mongodb" value="5"></td>
+			<td><input type="radio" id="mongodb_expert" name="mongodb" value="10"></td>
+		</tr>		
+		<tr>
+			<td>SQLite</td>
+			<td><input type="radio" id="sqlite_none"   name="sqlite" value="0" checked></td>
+			<td><input type="radio" id="sqlite_basic"  name="sqlite" value="1"></td>
+			<td><input type="radio" id="sqlite_mid"    name="sqlite" value="5"></td>
+			<td><input type="radio" id="sqlite_expert" name="sqlite" value="10"></td>
+		</tr>											
 	</table>		
 </small>	
 </div>		
