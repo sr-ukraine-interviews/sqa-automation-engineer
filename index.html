@@ -166,11 +166,16 @@ TV gets into frozen state randomly. You suspect a concurrency issue.
 
 <section>
 <pre style="margin-bottom: 0px;">
-8. Test Automation
-Describe your experience with static / dynamic analysis tools.
+8. Test Automation, static / dynamic analysis tool<br>
+Testing target is a network filter driver working on mobile phone.
+For this type of software 
+- memory leaks are critical - they may cause phone reboots
+- parsing mistakes are critical - because of Kernel-level security
+- performance is critical - since it deals with traffic
 
+Which sanitization / testing / profiling automation would you apply?
 </pre>		
-<img src="images/afl500-109032979.png" width="500px">
+<img src="images/afl500-109032979.png" width="500px" style="margin-bottom: 0px;">
 <pre style="margin-top: 0px;">
 <label for="a8">Your answer: </label>
 <textarea type="text" id="a8" name="a8" cols="113" rows="10">
