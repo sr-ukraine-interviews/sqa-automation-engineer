@@ -125,7 +125,7 @@ Suggest how to configure Linux permissions in a way to fix it.
 <smaller style="margin-bottom: 0px;">
 Daily routine with embedded devices test automation 
 requires bash and Linux utilities such as: 
-grep, nc, wget, curl, jq, sed, awk, tr, sshfs, mount, dd, df
+grep, nc, wget, curl, jq, sed, awk, tr, sshfs, mount, dd, df, du
 
 An automatic sub-domains extraction is needed from httpS certificates.
 Write bash script that:
@@ -149,14 +149,15 @@ curl -s "https://crt.sh/?q=${TARGET}&output=json"
 
 <section>
 <pre style="margin-bottom: 0px;">
-7. Test Automation
-Describe your experience with static / dynamic analysis tools.
+7. Root cause localization
+Have you ever worked with memory dumps, 
+additional logs configuration, memory analysis tools?
 
 TV gets into frozen state randomly. You suspect a concurrency issue.
 - How will you localize the root cause? 
 - How to automate the detection of such issues at various SLDC phases?
 </pre>		
-<img src="images/afl500-109032979.png" width="500px">
+<img src="images/memory dump.png" width="500px">
 <pre style="margin-top: 0px;">
 <label for="a7">Your answer: </label>
 <textarea type="text" id="a7" name="a7" cols="113" rows="10">
@@ -165,15 +166,29 @@ TV gets into frozen state randomly. You suspect a concurrency issue.
 </section>
 
 <section>
+	<pre style="margin-bottom: 0px;">
+	8. Test Automation
+	Describe your experience with static / dynamic analysis tools.
+	
+	</pre>		
+	<img src="images/afl500-109032979.png" width="500px">
+	<pre style="margin-top: 0px;">
+	<label for="a8">Your answer: </label>
+	<textarea type="text" id="a8" name="a8" cols="113" rows="10">
+	</textarea>
+	</pre>
+	</section>
+
+<section>
 <pre>
-8. Please evaluate your expertise in a number of tech. domains.
+9. Please evaluate your expertise in a number of tech. domains.
 This will help to adjust expectations, interview questions, salary rates.
 </pre>
 <div style="height: 400px; overflow-y:scroll;">
 <small>
 	<table>
 		<tr>
-			<td colspan="5" align="center">Programming languages portfolio</td>
+			<td colspan="6" align="center">Programming languages portfolio</td>
 		</tr>		
 		<tr>
 			<th>Domain</th>
@@ -181,6 +196,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<th>Basic</th>
 			<th>Advanced</th>
 			<th>Expert</th>
+			<th>Commercial Exp.</th>
 		</tr>
 		<tr>
 			<td>Python</td>
@@ -188,6 +204,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="python_basic"  name="python" value="1"></td>
 			<td><input type="radio" id="python_mid"    name="python" value="5"></td>
 			<td><input type="radio" id="python_expert" name="python" value="10"></td>
+			<td><input type="checkbox" id="python_expert" name="python" value="10"></td>
 		</tr>
 		<tr>
 			<td>Bash</td>
