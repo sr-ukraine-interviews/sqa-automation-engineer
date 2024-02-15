@@ -28,9 +28,8 @@
 	</p>
 </section>
 
-<section>
-	<h4>Enter ID received from HR manager</h4>
-	(or your name)
+<section data-auto-animate>
+	<h4>Enter your name</h4>
 	<p>
 		<input type="text" id="candidate_id" name="candidate_id" style="font-size:24px;">
 	</p>
@@ -238,7 +237,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="checkbox" id="bash_checkbox" name="bash" value="100"></td>
 		</tr>				
 		<tr>
-			<td>Python</td>
+			<td>С/С++</td>
 			<td><input type="radio" id="c_none"   name="c" value="0" checked></td>
 			<td><input type="radio" id="c_basic"  name="c" value="1"></td>
 			<td><input type="radio" id="c_mid"    name="c" value="5"></td>
@@ -253,6 +252,14 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="java_expert" name="java" value="10"></td>
 			<td><input type="checkbox" id="java_checkbox" name="java" value="100"></td>
 		</tr>
+		<tr>
+			<td>Groovy</td>
+			<td><input type="radio" id="groovy_none"   name="groovy" value="0" checked></td>
+			<td><input type="radio" id="groovy_basic"  name="groovy" value="1"></td>
+			<td><input type="radio" id="groovy_mid"    name="groovy" value="5"></td>
+			<td><input type="radio" id="groovy_expert" name="groovy" value="10"></td>
+			<td><input type="checkbox" id="groovy_checkbox" name="groovy" value="100"></td>
+		</tr>		
 		<tr>
 			<td colspan="6" align="center">Build & Dependency Management Tools</td>
 		</tr>					
@@ -281,29 +288,13 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="checkbox" id="cmake_checkbox" name="cmake" value="100"></td>
 		</tr>
 		<tr>
-			<td>Maven</td>
-			<td><input type="radio" id="maven_none"   name="maven" value="0" checked></td>
-			<td><input type="radio" id="maven_basic"  name="maven" value="1"></td>
-			<td><input type="radio" id="maven_mid"    name="maven" value="5"></td>
-			<td><input type="radio" id="maven_expert" name="maven" value="10"></td>
-			<td><input type="checkbox" id="maven_checkbox" name="maven" value="100"></td>
-		</tr>	
-		<tr>
 			<td>Gradle</td>
 			<td><input type="radio" id="gradle_none"   name="gradle" value="0" checked></td>
 			<td><input type="radio" id="gradle_basic"  name="gradle" value="1"></td>
 			<td><input type="radio" id="gradle_mid"    name="gradle" value="5"></td>
 			<td><input type="radio" id="gradle_expert" name="gradle" value="10"></td>
 			<td><input type="checkbox" id="maven_checkbox" name="maven" value="100"></td>
-		</tr>	
-		<tr>
-			<td>npm</td>
-			<td><input type="radio" id="npm_none"   name="npm" value="0" checked></td>
-			<td><input type="radio" id="npm_basic"  name="npm" value="1"></td>
-			<td><input type="radio" id="npm_mid"    name="npm" value="5"></td>
-			<td><input type="radio" id="npm_expert" name="npm" value="10"></td>
-			<td><input type="checkbox" id="maven_checkbox" name="maven" value="100"></td>
-		</tr>				
+		</tr>			
 		<tr>
 			<td colspan="6" align="center">Continuous Integration</td>
 		</tr>		
@@ -324,14 +315,6 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="checkbox" id="ghactions_checkbox" name="ghactions" value="100"></td>
 		</tr>
 		<tr>
-			<td>GitLab CI/CD</td>
-			<td><input type="radio" id="glcicd_none"   name="glcicd" value="0" checked></td>
-			<td><input type="radio" id="glcicd_basic"  name="glcicd" value="1"></td>
-			<td><input type="radio" id="glcicd_mid"    name="glcicd" value="5"></td>
-			<td><input type="radio" id="glcicd_expert" name="glcicd" value="10"></td>
-			<td><input type="checkbox" id="glcicd_checkbox" name="glcicd" value="100"></td>
-		</tr>
-		<tr>
 			<td>Jenkins</td>
 			<td><input type="radio" id="jenkins_none"   name="jenkins" value="0" checked></td>
 			<td><input type="radio" id="jenkins_basic"  name="jenkins" value="1"></td>
@@ -340,29 +323,13 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="checkbox" id="jenkins_checkbox" name="jenkins" value="100"></td>
 		</tr>		
 		<tr>
-			<td>Bamboo</td>
-			<td><input type="radio" id="bamboo_none"   name="bamboo" value="0" checked></td>
-			<td><input type="radio" id="bamboo_basic"  name="bamboo" value="1"></td>
-			<td><input type="radio" id="bamboo_mid"    name="bamboo" value="5"></td>
-			<td><input type="radio" id="bamboo_expert" name="bamboo" value="10"></td>
-			<td><input type="checkbox" id="bamboo_checkbox" name="bamboo" value="100"></td>
-		</tr>	
-		<tr>
 			<td>TeamCity</td>
 			<td><input type="radio" id="teamcity_none"   name="teamcity" value="0" checked></td>
 			<td><input type="radio" id="teamcity_basic"  name="teamcity" value="1"></td>
 			<td><input type="radio" id="teamcity_mid"    name="teamcity" value="5"></td>
 			<td><input type="radio" id="teamcity_expert" name="teamcity" value="10"></td>
 			<td><input type="checkbox" id="teamcity_checkbox" name="teamcity" value="100"></td>
-		</tr>	
-		<tr>
-			<td>CircleCI</td>
-			<td><input type="radio" id="circleci_none"   name="circleci" value="0" checked></td>
-			<td><input type="radio" id="circleci_basic"  name="circleci" value="1"></td>
-			<td><input type="radio" id="circleci_mid"    name="circleci" value="5"></td>
-			<td><input type="radio" id="circleci_expert" name="circleci" value="10"></td>
-			<td><input type="checkbox" id="circleci_checkbox" name="circleci" value="100"></td>
-		</tr>	
+		</tr>		
 		<tr>
 			<td colspan="6" align="center">Databases</td>
 		</tr>		
@@ -375,37 +342,29 @@ This will help to adjust expectations, interview questions, salary rates.
 			<th>Commercial Exp</th>
 		</tr>
 		<tr>
-			<td>MySQL</td>
+			<td>SQL Syntax (any DB)</td>
+			<td><input type="radio" id="sql_none"   name="sql" value="0" checked></td>
+			<td><input type="radio" id="sql_basic"  name="sql" value="1"></td>
+			<td><input type="radio" id="sql_mid"    name="sql" value="5"></td>
+			<td><input type="radio" id="sql_expert" name="sql" value="10"></td>
+			<td><input type="checkbox" id="sql_checkbox" name="sql" value="100"></td>
+		</tr>		
+		<tr>
+			<td>Any relational DB (MySQL)</td>
 			<td><input type="radio" id="mysql_none"   name="mysql" value="0" checked></td>
 			<td><input type="radio" id="mysql_basic"  name="mysql" value="1"></td>
 			<td><input type="radio" id="mysql_mid"    name="mysql" value="5"></td>
 			<td><input type="radio" id="mysql_expert" name="mysql" value="10"></td>
 			<td><input type="checkbox" id="mysql_checkbox" name="mysql" value="100"></td>
-		</tr>	
+		</tr>			
 		<tr>
-			<td>PostgreSQL</td>
-			<td><input type="radio" id="postgresql_none"   name="postgresql" value="0" checked></td>
-			<td><input type="radio" id="postgresql_basic"  name="postgresql" value="1"></td>
-			<td><input type="radio" id="postgresql_mid"    name="postgresql" value="5"></td>
-			<td><input type="radio" id="postgresql_expert" name="postgresql" value="10"></td>
-			<td><input type="checkbox" id="postgresql_checkbox" name="postgresql" value="100"></td>
-		</tr>		
-		<tr>
-			<td>MongoDB</td>
+			<td>Any non-relational DB</td>
 			<td><input type="radio" id="mongodb_none"   name="mongodb" value="0" checked></td>
 			<td><input type="radio" id="mongodb_basic"  name="mongodb" value="1"></td>
 			<td><input type="radio" id="mongodb_mid"    name="mongodb" value="5"></td>
 			<td><input type="radio" id="mongodb_expert" name="mongodb" value="10"></td>
 			<td><input type="checkbox" id="mongodb_checkbox" name="mongodb" value="100"></td>
 		</tr>		
-		<tr>
-			<td>SQLite</td>
-			<td><input type="radio" id="sqlite_none"   name="sqlite" value="0" checked></td>
-			<td><input type="radio" id="sqlite_basic"  name="sqlite" value="1"></td>
-			<td><input type="radio" id="sqlite_mid"    name="sqlite" value="5"></td>
-			<td><input type="radio" id="sqlite_expert" name="sqlite" value="10"></td>
-			<td><input type="checkbox" id="sqlite_checkbox" name="sqlite" value="100"></td>
-		</tr>	
 		<tr>
 			<td colspan="6" align="center">Testing Frameworks</td>
 		</tr>		
@@ -442,6 +401,14 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="checkbox" id="robot_checkbox" name="robot" value="100"></td>
 		</tr>	
 		<tr>
+			<td>Behave</td>
+			<td><input type="radio" id="behave_none"   name="behave" value="0" checked></td>
+			<td><input type="radio" id="behave_basic"  name="behave" value="1"></td>
+			<td><input type="radio" id="behave_mid"    name="behave" value="5"></td>
+			<td><input type="radio" id="behave_expert" name="behave" value="10"></td>
+			<td><input type="checkbox" id="behave_checkbox" name="behave" value="100"></td>
+		</tr>		
+		<tr>
 			<td>Junit/TestNG</td>
 			<td><input type="radio" id="junit_none"   name="junit" value="0" checked></td>
 			<td><input type="radio" id="junit_basic"  name="junit" value="1"></td>
@@ -450,29 +417,13 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="checkbox" id="junit_checkbox" name="junit" value="100"></td>
 		</tr>	
 		<tr>
-			<td>Unittest</td>
-			<td><input type="radio" id="unittest_none"   name="unittest" value="0" checked></td>
-			<td><input type="radio" id="unittest_basic"  name="unittest" value="1"></td>
-			<td><input type="radio" id="unittest_mid"    name="unittest" value="5"></td>
-			<td><input type="radio" id="unittest_expert" name="unittest" value="10"></td>
-			<td><input type="checkbox" id="unittest_checkbox" name="unittest" value="100"></td>
-		</tr>			
-		<tr>
 			<td>Appium</td>
 			<td><input type="radio" id="appium_none"   name="appium" value="0" checked></td>
 			<td><input type="radio" id="appium_basic"  name="appium" value="1"></td>
 			<td><input type="radio" id="appium_mid"    name="appium" value="5"></td>
 			<td><input type="radio" id="appium_expert" name="appium" value="10"></td>
 			<td><input type="checkbox" id="appium_checkbox" name="appium" value="100"></td>
-		</tr>	
-		<tr>
-			<td>Selenium</td>
-			<td><input type="radio" id="selenium_none"   name="selenium" value="0" checked></td>
-			<td><input type="radio" id="selenium_basic"  name="selenium" value="1"></td>
-			<td><input type="radio" id="selenium_mid"    name="selenium" value="5"></td>
-			<td><input type="radio" id="selenium_expert" name="selenium" value="10"></td>
-			<td><input type="checkbox" id="selenium_checkbox" name="selenium" value="100"></td>
-		</tr>		
+		</tr>					
 		<tr>
 			<td>UIAutomator</td>
 			<td><input type="radio" id="uiautomator_none"   name="uiautomator" value="0" checked></td>
@@ -480,7 +431,15 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="uiautomator_mid"    name="uiautomator" value="5"></td>
 			<td><input type="radio" id="uiautomator_expert" name="uiautomator" value="10"></td>
 			<td><input type="checkbox" id="uiautomator_checkbox" name="uiautomator" value="100"></td>
-		</tr>	
+		</tr>
+		<tr>
+			<td>Selenium</td>
+			<td><input type="radio" id="selenium_none"   name="selenium" value="0" checked></td>
+			<td><input type="radio" id="selenium_basic"  name="selenium" value="1"></td>
+			<td><input type="radio" id="selenium_mid"    name="selenium" value="5"></td>
+			<td><input type="radio" id="selenium_expert" name="selenium" value="10"></td>
+			<td><input type="checkbox" id="selenium_checkbox" name="selenium" value="100"></td>
+		</tr>				
 		<tr>
 			<td colspan="6" align="center">Test Case Management systems</td>
 		</tr>		
@@ -499,31 +458,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="testrail_mid"    name="testrail" value="5"></td>
 			<td><input type="radio" id="testrail_expert" name="testrail" value="10"></td>
 			<td><input type="checkbox" id="testrail_checkbox" name="testrail" value="100"></td>
-		</tr>	
-		<tr>
-			<td>Zephyr</td>
-			<td><input type="radio" id="zephyr_none"   name="zephyr" value="0" checked></td>
-			<td><input type="radio" id="zephyr_basic"  name="zephyr" value="1"></td>
-			<td><input type="radio" id="zephyr_mid"    name="zephyr" value="5"></td>
-			<td><input type="radio" id="zephyr_expert" name="zephyr" value="10"></td>
-			<td><input type="checkbox" id="zephyr_checkbox" name="zephyr" value="100"></td>
-		</tr>	
-		<tr>
-			<td>TestLink</td>
-			<td><input type="radio" id="testlink_none"   name="testlink" value="0" checked></td>
-			<td><input type="radio" id="testlink_basic"  name="testlink" value="1"></td>
-			<td><input type="radio" id="testlink_mid"    name="testlink" value="5"></td>
-			<td><input type="radio" id="testlink_expert" name="testlink" value="10"></td>
-			<td><input type="checkbox" id="testlink_checkbox" name="testlink" value="100"></td>
-		</tr>	
-		<tr>
-			<td>Xray</td>
-			<td><input type="radio" id="xray_none"   name="xray" value="0" checked></td>
-			<td><input type="radio" id="xray_basic"  name="xray" value="1"></td>
-			<td><input type="radio" id="xray_mid"    name="xray" value="5"></td>
-			<td><input type="radio" id="xray_expert" name="xray" value="10"></td>
-			<td><input type="checkbox" id="xray_checkbox" name="xray" value="100"></td>
-		</tr>	
+		</tr>		
 		<tr>
 			<td colspan="6" align="center">Static/Dynamic analysis tools</td>
 		</tr>		
@@ -536,13 +471,21 @@ This will help to adjust expectations, interview questions, salary rates.
 			<th>Commercial Exp</th>
 		</tr>
 		<tr>
-			<td>gcc/clang sanitizers</td>
-			<td><input type="radio" id="sanitizers_none"   name="sanitizers" value="0" checked></td>
-			<td><input type="radio" id="sanitizers_basic"  name="sanitizers" value="1"></td>
-			<td><input type="radio" id="sanitizers_mid"    name="sanitizers" value="5"></td>
-			<td><input type="radio" id="sanitizers_expert" name="sanitizers" value="10"></td>
-			<td><input type="checkbox" id="sanitizers_checkbox" name="sanitizers" value="100"></td>
-		</tr>				
+			<td>Sonar</td>
+			<td><input type="radio" id="sonar_none"   name="sonar" value="0" checked></td>
+			<td><input type="radio" id="sonar_basic"  name="sonar" value="1"></td>
+			<td><input type="radio" id="sonar_mid"    name="sonar" value="5"></td>
+			<td><input type="radio" id="sonar_expert" name="sonar" value="10"></td>
+			<td><input type="checkbox" id="sonar_checkbox" name="sonar" value="100"></td>
+		</tr>	
+		<tr>
+			<td>cppcheck</td>
+			<td><input type="radio" id="cppcheck_none"   name="cppcheck" value="0" checked></td>
+			<td><input type="radio" id="cppcheck_basic"  name="cppcheck" value="1"></td>
+			<td><input type="radio" id="cppcheck_mid"    name="cppcheck" value="5"></td>
+			<td><input type="radio" id="cppcheck_expert" name="cppcheck" value="10"></td>
+			<td><input type="checkbox" id="cppcheck_checkbox" name="cppcheck" value="100"></td>
+		</tr>								
 		<tr>
 			<td>Clang Static Analyzer</td>
 			<td><input type="radio" id="clang_none"   name="clang" value="0" checked></td>
@@ -550,23 +493,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="clang_mid"    name="clang" value="5"></td>
 			<td><input type="radio" id="clang_expert" name="clang" value="10"></td>
 			<td><input type="checkbox" id="clang_checkbox" name="clang" value="100"></td>
-		</tr>			
-		<tr>
-			<td>AFL (American Fuzzy Lop)</td>
-			<td><input type="radio" id="afl_none"   name="afl" value="0" checked></td>
-			<td><input type="radio" id="afl_basic"  name="afl" value="1"></td>
-			<td><input type="radio" id="afl_mid"    name="afl" value="5"></td>
-			<td><input type="radio" id="afl_expert" name="afl" value="10"></td>
-			<td><input type="checkbox" id="afl_checkbox" name="afl" value="100"></td>
-		</tr>	
-		<tr>
-			<td>Sonar</td>
-			<td><input type="radio" id="sonar_none"   name="sonar" value="0" checked></td>
-			<td><input type="radio" id="sonar_basic"  name="sonar" value="1"></td>
-			<td><input type="radio" id="sonar_mid"    name="sonar" value="5"></td>
-			<td><input type="radio" id="sonar_expert" name="sonar" value="10"></td>
-			<td><input type="checkbox" id="sonar_checkbox" name="sonar" value="100"></td>
-		</tr>		
+		</tr>				
 		<tr>
 			<td>Coverity</td>
 			<td><input type="radio" id="coverity_none"   name="coverity" value="0" checked></td>
@@ -591,8 +518,245 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="valgrind_expert" name="valgrind" value="10"></td>
 			<td><input type="checkbox" id="valgrind_checkbox" name="valgrind" value="100"></td>
 		</tr>		
-		
-
+		<tr>
+			<td>AFL (American Fuzzy Lop)</td>
+			<td><input type="radio" id="afl_none"   name="afl" value="0" checked></td>
+			<td><input type="radio" id="afl_basic"  name="afl" value="1"></td>
+			<td><input type="radio" id="afl_mid"    name="afl" value="5"></td>
+			<td><input type="radio" id="afl_expert" name="afl" value="10"></td>
+			<td><input type="checkbox" id="afl_checkbox" name="afl" value="100"></td>
+		</tr>		
+		<tr>
+			<td>gcc/clang sanitizers</td>
+			<td><input type="radio" id="sanitizers_none"   name="sanitizers" value="0" checked></td>
+			<td><input type="radio" id="sanitizers_basic"  name="sanitizers" value="1"></td>
+			<td><input type="radio" id="sanitizers_mid"    name="sanitizers" value="5"></td>
+			<td><input type="radio" id="sanitizers_expert" name="sanitizers" value="10"></td>
+			<td><input type="checkbox" id="sanitizers_checkbox" name="sanitizers" value="100"></td>
+		</tr>
+		<tr>
+			<td colspan="6" align="center">Code Review Tools</td>
+		</tr>		
+		<tr>
+			<th>Domain</th>
+			<th>None</th>
+			<th>Basic</th>
+			<th>Advanced</th>
+			<th>Expert</th>
+			<th>Commercial Exp</th>
+		</tr>	
+		<tr>
+			<td>Gerrit</td>
+			<td><input type="radio" id="gerrit_none"   name="gerrit" value="0" checked></td>
+			<td><input type="radio" id="gerrit_basic"  name="gerrit" value="1"></td>
+			<td><input type="radio" id="gerrit_mid"    name="gerrit" value="5"></td>
+			<td><input type="radio" id="gerrit_expert" name="gerrit" value="10"></td>
+			<td><input type="checkbox" id="gerrit_checkbox" name="gerrit" value="100"></td>
+		</tr>
+		<tr>
+			<td>Helix Swarm</td>
+			<td><input type="radio" id="helix_none"   name="helix" value="0" checked></td>
+			<td><input type="radio" id="helix_basic"  name="helix" value="1"></td>
+			<td><input type="radio" id="helix_mid"    name="helix" value="5"></td>
+			<td><input type="radio" id="helix_expert" name="helix" value="10"></td>
+			<td><input type="checkbox" id="helix_checkbox" name="helix" value="100"></td>
+		</tr>
+		<tr>
+			<td>GitHub Pull Requests</td>
+			<td><input type="radio" id="ghpull_none"   name="ghpull" value="0" checked></td>
+			<td><input type="radio" id="ghpull_basic"  name="ghpull" value="1"></td>
+			<td><input type="radio" id="ghpull_mid"    name="ghpull" value="5"></td>
+			<td><input type="radio" id="ghpull_expert" name="ghpull" value="10"></td>
+			<td><input type="checkbox" id="ghpull_checkbox" name="ghpull" value="100"></td>
+		</tr>	
+		<tr>
+			<td colspan="6" align="center">Source Controls</td>
+		</tr>		
+		<tr>
+			<th>Domain</th>
+			<th>None</th>
+			<th>Basic</th>
+			<th>Advanced</th>
+			<th>Expert</th>
+			<th>Commercial Exp</th>
+		</tr>	
+		<tr>
+			<td>Git</td>
+			<td><input type="radio" id="git_none"   name="git" value="0" checked></td>
+			<td><input type="radio" id="git_basic"  name="git" value="1"></td>
+			<td><input type="radio" id="git_mid"    name="git" value="5"></td>
+			<td><input type="radio" id="git_expert" name="git" value="10"></td>
+			<td><input type="checkbox" id="git_checkbox" name="git" value="100"></td>
+		</tr>		
+		<tr>
+			<td>GitHub</td>
+			<td><input type="radio" id="github_none"   name="github" value="0" checked></td>
+			<td><input type="radio" id="github_basic"  name="github" value="1"></td>
+			<td><input type="radio" id="github_mid"    name="github" value="5"></td>
+			<td><input type="radio" id="github_expert" name="github" value="10"></td>
+			<td><input type="checkbox" id="github_checkbox" name="github" value="100"></td>
+		</tr>	
+		<tr>
+			<td>Perforce (Helix Core)</td>
+			<td><input type="radio" id="p4_none"   name="p4" value="0" checked></td>
+			<td><input type="radio" id="p4_basic"  name="p4" value="1"></td>
+			<td><input type="radio" id="p4_mid"    name="p4" value="5"></td>
+			<td><input type="radio" id="p4_expert" name="p4" value="10"></td>
+			<td><input type="checkbox" id="p4_checkbox" name="p4" value="100"></td>
+		</tr>	
+		<tr>
+			<td colspan="6" align="center">Virtualization / Containerization</td>
+		</tr>		
+		<tr>
+			<th>Domain</th>
+			<th>None</th>
+			<th>Basic</th>
+			<th>Advanced</th>
+			<th>Expert</th>
+			<th>Commercial Exp</th>
+		</tr>	
+		<tr>
+			<td>Hyper-V</td>
+			<td><input type="radio" id="hyperv_none"   name="hyperv" value="0" checked></td>
+			<td><input type="radio" id="hyperv_basic"  name="hyperv" value="1"></td>
+			<td><input type="radio" id="hyperv_mid"    name="hyperv" value="5"></td>
+			<td><input type="radio" id="hyperv_expert" name="hyperv" value="10"></td>
+			<td><input type="checkbox" id="hyperv_checkbox" name="hyperv" value="100"></td>
+		</tr>		
+		<tr>
+			<td>Kubernetes</td>
+			<td><input type="radio" id="kubernetes_none"   name="kubernetes" value="0" checked></td>
+			<td><input type="radio" id="kubernetes_basic"  name="kubernetes" value="1"></td>
+			<td><input type="radio" id="kubernetes_mid"    name="kubernetes" value="5"></td>
+			<td><input type="radio" id="kubernetes_expert" name="kubernetes" value="10"></td>
+			<td><input type="checkbox" id="kubernetes_checkbox" name="kubernetes" value="100"></td>
+		</tr>	
+		<tr>
+			<td>Docker</td>
+			<td><input type="radio" id="docker_none"   name="docker" value="0" checked></td>
+			<td><input type="radio" id="docker_basic"  name="docker" value="1"></td>
+			<td><input type="radio" id="docker_mid"    name="docker" value="5"></td>
+			<td><input type="radio" id="docker_expert" name="docker" value="10"></td>
+			<td><input type="checkbox" id="docker_checkbox" name="docker" value="100"></td>
+		</tr>	
+		<tr>
+			<td>VMWare</td>
+			<td><input type="radio" id="vmware_none"   name="vmware" value="0" checked></td>
+			<td><input type="radio" id="vmware_basic"  name="vmware" value="1"></td>
+			<td><input type="radio" id="vmware_mid"    name="vmware" value="5"></td>
+			<td><input type="radio" id="vmware_expert" name="vmware" value="10"></td>
+			<td><input type="checkbox" id="vmware_checkbox" name="vmware" value="100"></td>
+		</tr>	
+		<tr>
+			<td>VirtualBox</td>
+			<td><input type="radio" id="virtualbox_none"   name="virtualbox" value="0" checked></td>
+			<td><input type="radio" id="virtualbox_basic"  name="virtualbox" value="1"></td>
+			<td><input type="radio" id="virtualbox_mid"    name="virtualbox" value="5"></td>
+			<td><input type="radio" id="virtualbox_expert" name="virtualbox" value="10"></td>
+			<td><input type="checkbox" id="virtualbox_checkbox" name="virtualbox" value="100"></td>
+		</tr>	
+		<tr>
+			<td>KVM</td>
+			<td><input type="radio" id="kvm_none"   name="kvm" value="0" checked></td>
+			<td><input type="radio" id="kvm_basic"  name="kvm" value="1"></td>
+			<td><input type="radio" id="kvm_mid"    name="kvm" value="5"></td>
+			<td><input type="radio" id="kvm_expert" name="kvm" value="10"></td>
+			<td><input type="checkbox" id="kvm_checkbox" name="kvm" value="100"></td>
+		</tr>	
+		<tr>
+			<td colspan="6" align="center">Operating Systems</td>
+		</tr>		
+		<tr>
+			<th>Domain</th>
+			<th>None</th>
+			<th>Basic</th>
+			<th>Advanced</th>
+			<th>Expert</th>
+			<th>Commercial Exp</th>
+		</tr>	
+		<tr>
+			<td>Linux</td>
+			<td><input type="radio" id="linux_none"   name="linux" value="0" checked></td>
+			<td><input type="radio" id="linux_basic"  name="linux" value="1"></td>
+			<td><input type="radio" id="linux_mid"    name="linux" value="5"></td>
+			<td><input type="radio" id="linux_expert" name="linux" value="10"></td>
+			<td><input type="checkbox" id="linux_checkbox" name="linux" value="100"></td>
+		</tr>		
+		<tr>
+			<td>Windows</td>
+			<td><input type="radio" id="windows_none"   name="windows" value="0" checked></td>
+			<td><input type="radio" id="windows_basic"  name="windows" value="1"></td>
+			<td><input type="radio" id="windows_mid"    name="windows" value="5"></td>
+			<td><input type="radio" id="windows_expert" name="windows" value="10"></td>
+			<td><input type="checkbox" id="windows_checkbox" name="windows" value="100"></td>
+		</tr>		
+		<tr>
+			<td>MacOS</td>
+			<td><input type="radio" id="macos_none"   name="macos" value="0" checked></td>
+			<td><input type="radio" id="macos_basic"  name="macos" value="1"></td>
+			<td><input type="radio" id="macos_mid"    name="macos" value="5"></td>
+			<td><input type="radio" id="macos_expert" name="macos" value="10"></td>
+			<td><input type="checkbox" id="macos_checkbox" name="macos" value="100"></td>
+		</tr>		
+		<tr>
+			<td>Android</td>
+			<td><input type="radio" id="android_none"   name="android" value="0" checked></td>
+			<td><input type="radio" id="android_basic"  name="android" value="1"></td>
+			<td><input type="radio" id="android_mid"    name="android" value="5"></td>
+			<td><input type="radio" id="android_expert" name="android" value="10"></td>
+			<td><input type="checkbox" id="android_checkbox" name="android" value="100"></td>
+		</tr>							
+		<tr>
+			<td colspan="6" align="center">Methodologies</td>
+		</tr>		
+		<tr>
+			<th>Domain</th>
+			<th>None</th>
+			<th>Basic</th>
+			<th>Advanced</th>
+			<th>Expert</th>
+			<th>Commercial Exp</th>
+		</tr>	
+		<tr>
+			<td>Waterfall</td>
+			<td><input type="radio" id="waterfall_none"   name="waterfall" value="0" checked></td>
+			<td><input type="radio" id="waterfall_basic"  name="waterfall" value="1"></td>
+			<td><input type="radio" id="waterfall_mid"    name="waterfall" value="5"></td>
+			<td><input type="radio" id="waterfall_expert" name="waterfall" value="10"></td>
+			<td><input type="checkbox" id="waterfall_checkbox" name="waterfall" value="100"></td>
+		</tr>		
+		<tr>
+			<td>TDD/ATDD</td>
+			<td><input type="radio" id="tdd_none"   name="tdd" value="0" checked></td>
+			<td><input type="radio" id="tdd_basic"  name="tdd" value="1"></td>
+			<td><input type="radio" id="tdd_mid"    name="tdd" value="5"></td>
+			<td><input type="radio" id="tdd_expert" name="tdd" value="10"></td>
+			<td><input type="checkbox" id="tdd_checkbox" name="tdd" value="100"></td>
+		</tr>		
+		<tr>
+			<td>Agile/SCRUM</td>
+			<td><input type="radio" id="scrum_none"   name="scrum" value="0" checked></td>
+			<td><input type="radio" id="scrum_basic"  name="scrum" value="1"></td>
+			<td><input type="radio" id="scrum_mid"    name="scrum" value="5"></td>
+			<td><input type="radio" id="scrum_expert" name="scrum" value="10"></td>
+			<td><input type="checkbox" id="scrum_checkbox" name="scrum" value="100"></td>
+		</tr>		
+		<tr>
+			<td>Agile/Kanban</td>
+			<td><input type="radio" id="kanban_none"   name="kanban" value="0" checked></td>
+			<td><input type="radio" id="kanban_basic"  name="kanban" value="1"></td>
+			<td><input type="radio" id="kanban_mid"    name="kanban" value="5"></td>
+			<td><input type="radio" id="kanban_expert" name="kanban" value="10"></td>
+			<td><input type="checkbox" id="kanban_checkbox" name="kanban" value="100"></td>
+		</tr>	
+		<tr>
+			<td>Extreme Programming</td>
+			<td><input type="radio" id="xp_none"   name="xp" value="0" checked></td>
+			<td><input type="radio" id="xp_basic"  name="xp" value="1"></td>
+			<td><input type="radio" id="xp_mid"    name="xp" value="5"></td>
+			<td><input type="radio" id="xp_expert" name="xp" value="10"></td>
+			<td><input type="checkbox" id="xp_checkbox" name="xp" value="100"></td>
+		</tr>							
 	</table>		
 </small>	
 </div>		
