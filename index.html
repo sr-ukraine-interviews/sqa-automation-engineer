@@ -151,13 +151,13 @@ curl -s "https://crt.sh/?q=${TARGET}&output=json"
 <pre style="margin-bottom: 0px;">
 7. Root cause localization
 Have you ever worked with memory dumps, 
-additional logs configuration, memory analysis tools?
+debug tools or disassemblers, memory analysis tools?
 
 TV gets into frozen state randomly. You suspect a concurrency issue.
 - How will you localize the root cause? 
 - How to automate the detection of such issues at various SLDC phases?
 </pre>		
-<img src="images/memory dump.png" width="500px">
+<img src="images/memdump.png" width="500px">
 <pre style="margin-top: 0px;">
 <label for="a7">Your answer: </label>
 <textarea type="text" id="a7" name="a7" cols="113" rows="10">
@@ -196,7 +196,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<th>Basic</th>
 			<th>Advanced</th>
 			<th>Expert</th>
-			<th>Commercial Exp.</th>
+			<th>Commercial Exp</th>
 		</tr>
 		<tr>
 			<td>Python</td>
@@ -204,7 +204,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="python_basic"  name="python" value="1"></td>
 			<td><input type="radio" id="python_mid"    name="python" value="5"></td>
 			<td><input type="radio" id="python_expert" name="python" value="10"></td>
-			<td><input type="checkbox" id="python_expert" name="python" value="10"></td>
+			<td><input type="checkbox" id="python_checkbox" name="python" value="100"></td>
 		</tr>
 		<tr>
 			<td>Bash</td>
@@ -212,6 +212,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="bash_basic"  name="bash" value="1"></td>
 			<td><input type="radio" id="bash_mid"    name="bash" value="5"></td>
 			<td><input type="radio" id="bash_expert" name="bash" value="10"></td>
+			<td><input type="checkbox" id="bash_checkbox" name="bash" value="100"></td>
 		</tr>				
 		<tr>
 			<td>Python</td>
@@ -219,6 +220,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="c_basic"  name="c" value="1"></td>
 			<td><input type="radio" id="c_mid"    name="c" value="5"></td>
 			<td><input type="radio" id="c_expert" name="c" value="10"></td>
+			<td><input type="checkbox" id="c_checkbox" name="c" value="100"></td>
 		</tr>
 		<tr>
 			<td>Java</td>
@@ -226,9 +228,10 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="java_basic"  name="java" value="1"></td>
 			<td><input type="radio" id="java_mid"    name="java" value="5"></td>
 			<td><input type="radio" id="java_expert" name="java" value="10"></td>
+			<td><input type="checkbox" id="java_checkbox" name="java" value="100"></td>
 		</tr>
 		<tr>
-			<td colspan="5" align="center">Build & Dependency Management Tools</td>
+			<td colspan="6" align="center">Build & Dependency Management Tools</td>
 		</tr>					
 		<tr>
 			<th>Domain</th>
@@ -236,6 +239,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<th>Basic</th>
 			<th>Advanced</th>
 			<th>Expert</th>
+			<th>Commercial Exp</th>
 		</tr>
 		<tr>
 			<td>Make</td>
@@ -243,6 +247,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="make_basic"  name="make" value="1"></td>
 			<td><input type="radio" id="make_mid"    name="make" value="5"></td>
 			<td><input type="radio" id="make_expert" name="make" value="10"></td>
+			<td><input type="checkbox" id="make_checkbox" name="make" value="100"></td>
 		</tr>
 		<tr>
 			<td>CMake</td>
@@ -250,6 +255,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="cmake_basic"  name="cmake" value="1"></td>
 			<td><input type="radio" id="cmake_mid"    name="cmake" value="5"></td>
 			<td><input type="radio" id="cmake_expert" name="cmake" value="10"></td>
+			<td><input type="checkbox" id="cmake_checkbox" name="cmake" value="100"></td>
 		</tr>
 		<tr>
 			<td>Maven</td>
@@ -257,6 +263,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="maven_basic"  name="maven" value="1"></td>
 			<td><input type="radio" id="maven_mid"    name="maven" value="5"></td>
 			<td><input type="radio" id="maven_expert" name="maven" value="10"></td>
+			<td><input type="checkbox" id="maven_checkbox" name="maven" value="100"></td>
 		</tr>	
 		<tr>
 			<td>Gradle</td>
@@ -264,6 +271,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="gradle_basic"  name="gradle" value="1"></td>
 			<td><input type="radio" id="gradle_mid"    name="gradle" value="5"></td>
 			<td><input type="radio" id="gradle_expert" name="gradle" value="10"></td>
+			<td><input type="checkbox" id="maven_checkbox" name="maven" value="100"></td>
 		</tr>	
 		<tr>
 			<td>npm</td>
@@ -271,9 +279,10 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="npm_basic"  name="npm" value="1"></td>
 			<td><input type="radio" id="npm_mid"    name="npm" value="5"></td>
 			<td><input type="radio" id="npm_expert" name="npm" value="10"></td>
+			<td><input type="checkbox" id="maven_checkbox" name="maven" value="100"></td>
 		</tr>				
 		<tr>
-			<td colspan="5" align="center">Continuous Integration</td>
+			<td colspan="6" align="center">Continuous Integration</td>
 		</tr>		
 		<tr>
 			<th>Domain</th>
@@ -281,6 +290,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<th>Basic</th>
 			<th>Advanced</th>
 			<th>Expert</th>
+			<th>Commercial Exp</th>
 		</tr>
 		<tr>
 			<td>GitHub Actions</td>
@@ -288,6 +298,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="ghactions_basic"  name="ghactions" value="1"></td>
 			<td><input type="radio" id="ghactions_mid"    name="ghactions" value="5"></td>
 			<td><input type="radio" id="ghactions_expert" name="ghactions" value="10"></td>
+			<td><input type="checkbox" id="ghactions_checkbox" name="ghactions" value="100"></td>
 		</tr>
 		<tr>
 			<td>GitLab CI/CD</td>
@@ -295,6 +306,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="glcicd_basic"  name="glcicd" value="1"></td>
 			<td><input type="radio" id="glcicd_mid"    name="glcicd" value="5"></td>
 			<td><input type="radio" id="glcicd_expert" name="glcicd" value="10"></td>
+			<td><input type="checkbox" id="glcicd_checkbox" name="glcicd" value="100"></td>
 		</tr>
 		<tr>
 			<td>Jenkins</td>
@@ -302,6 +314,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="jenkins_basic"  name="jenkins" value="1"></td>
 			<td><input type="radio" id="jenkins_mid"    name="jenkins" value="5"></td>
 			<td><input type="radio" id="jenkins_expert" name="jenkins" value="10"></td>
+			<td><input type="checkbox" id="jenkins_checkbox" name="jenkins" value="100"></td>
 		</tr>		
 		<tr>
 			<td>Bamboo</td>
@@ -309,6 +322,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="bamboo_basic"  name="bamboo" value="1"></td>
 			<td><input type="radio" id="bamboo_mid"    name="bamboo" value="5"></td>
 			<td><input type="radio" id="bamboo_expert" name="bamboo" value="10"></td>
+			<td><input type="checkbox" id="bamboo_checkbox" name="bamboo" value="100"></td>
 		</tr>	
 		<tr>
 			<td>TeamCity</td>
@@ -316,6 +330,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="teamcity_basic"  name="teamcity" value="1"></td>
 			<td><input type="radio" id="teamcity_mid"    name="teamcity" value="5"></td>
 			<td><input type="radio" id="teamcity_expert" name="teamcity" value="10"></td>
+			<td><input type="checkbox" id="teamcity_checkbox" name="teamcity" value="100"></td>
 		</tr>	
 		<tr>
 			<td>CircleCI</td>
@@ -323,9 +338,10 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="circleci_basic"  name="circleci" value="1"></td>
 			<td><input type="radio" id="circleci_mid"    name="circleci" value="5"></td>
 			<td><input type="radio" id="circleci_expert" name="circleci" value="10"></td>
+			<td><input type="checkbox" id="circleci_checkbox" name="circleci" value="100"></td>
 		</tr>	
 		<tr>
-			<td colspan="5" align="center">Databases</td>
+			<td colspan="6" align="center">Databases</td>
 		</tr>		
 		<tr>
 			<th>Domain</th>
@@ -333,6 +349,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<th>Basic</th>
 			<th>Advanced</th>
 			<th>Expert</th>
+			<th>Commercial Exp</th>
 		</tr>
 		<tr>
 			<td>MySQL</td>
@@ -340,6 +357,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="mysql_basic"  name="mysql" value="1"></td>
 			<td><input type="radio" id="mysql_mid"    name="mysql" value="5"></td>
 			<td><input type="radio" id="mysql_expert" name="mysql" value="10"></td>
+			<td><input type="checkbox" id="mysql_checkbox" name="mysql" value="100"></td>
 		</tr>	
 		<tr>
 			<td>PostgreSQL</td>
@@ -347,6 +365,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="postgresql_basic"  name="postgresql" value="1"></td>
 			<td><input type="radio" id="postgresql_mid"    name="postgresql" value="5"></td>
 			<td><input type="radio" id="postgresql_expert" name="postgresql" value="10"></td>
+			<td><input type="checkbox" id="postgresql_checkbox" name="postgresql" value="100"></td>
 		</tr>		
 		<tr>
 			<td>MongoDB</td>
@@ -354,6 +373,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="mongodb_basic"  name="mongodb" value="1"></td>
 			<td><input type="radio" id="mongodb_mid"    name="mongodb" value="5"></td>
 			<td><input type="radio" id="mongodb_expert" name="mongodb" value="10"></td>
+			<td><input type="checkbox" id="mongodb_checkbox" name="mongodb" value="100"></td>
 		</tr>		
 		<tr>
 			<td>SQLite</td>
@@ -361,9 +381,10 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="sqlite_basic"  name="sqlite" value="1"></td>
 			<td><input type="radio" id="sqlite_mid"    name="sqlite" value="5"></td>
 			<td><input type="radio" id="sqlite_expert" name="sqlite" value="10"></td>
+			<td><input type="checkbox" id="sqlite_checkbox" name="sqlite" value="100"></td>
 		</tr>	
 		<tr>
-			<td colspan="5" align="center">Testing Frameworks</td>
+			<td colspan="6" align="center">Testing Frameworks</td>
 		</tr>		
 		<tr>
 			<th>Domain</th>
@@ -371,6 +392,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<th>Basic</th>
 			<th>Advanced</th>
 			<th>Expert</th>
+			<th>Commercial Exp</th>
 		</tr>
 		<tr>
 			<td>PyTest</td>
@@ -378,6 +400,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="pytest_basic"  name="pytest" value="1"></td>
 			<td><input type="radio" id="pytest_mid"    name="pytest" value="5"></td>
 			<td><input type="radio" id="pytest_expert" name="pytest" value="10"></td>
+			<td><input type="checkbox" id="pytest_checkbox" name="pytest" value="100"></td>
 		</tr>	
 		<tr>
 			<td>GTest</td>
@@ -385,6 +408,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="gtest_basic"  name="gtest" value="1"></td>
 			<td><input type="radio" id="gtest_mid"    name="gtest" value="5"></td>
 			<td><input type="radio" id="gtest_expert" name="gtest" value="10"></td>
+			<td><input type="checkbox" id="gtest_checkbox" name="gtest" value="100"></td>
 		</tr>		
 		<tr>
 			<td>Robot Framework</td>
@@ -392,6 +416,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="robot_basic"  name="robot" value="1"></td>
 			<td><input type="radio" id="robot_mid"    name="robot" value="5"></td>
 			<td><input type="radio" id="robot_expert" name="robot" value="10"></td>
+			<td><input type="checkbox" id="robot_checkbox" name="robot" value="100"></td>
 		</tr>	
 		<tr>
 			<td>Junit/TestNG</td>
@@ -399,6 +424,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="junit_basic"  name="junit" value="1"></td>
 			<td><input type="radio" id="junit_mid"    name="junit" value="5"></td>
 			<td><input type="radio" id="junit_expert" name="junit" value="10"></td>
+			<td><input type="checkbox" id="junit_checkbox" name="junit" value="100"></td>
 		</tr>	
 		<tr>
 			<td>Unittest</td>
@@ -406,6 +432,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="unittest_basic"  name="unittest" value="1"></td>
 			<td><input type="radio" id="unittest_mid"    name="unittest" value="5"></td>
 			<td><input type="radio" id="unittest_expert" name="unittest" value="10"></td>
+			<td><input type="checkbox" id="unittest_checkbox" name="unittest" value="100"></td>
 		</tr>			
 		<tr>
 			<td>Appium</td>
@@ -413,6 +440,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="appium_basic"  name="appium" value="1"></td>
 			<td><input type="radio" id="appium_mid"    name="appium" value="5"></td>
 			<td><input type="radio" id="appium_expert" name="appium" value="10"></td>
+			<td><input type="checkbox" id="appium_checkbox" name="appium" value="100"></td>
 		</tr>	
 		<tr>
 			<td>Selenium</td>
@@ -420,6 +448,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="selenium_basic"  name="selenium" value="1"></td>
 			<td><input type="radio" id="selenium_mid"    name="selenium" value="5"></td>
 			<td><input type="radio" id="selenium_expert" name="selenium" value="10"></td>
+			<td><input type="checkbox" id="selenium_checkbox" name="selenium" value="100"></td>
 		</tr>		
 		<tr>
 			<td>UIAutomator</td>
@@ -427,9 +456,10 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="uiautomator_basic"  name="uiautomator" value="1"></td>
 			<td><input type="radio" id="uiautomator_mid"    name="uiautomator" value="5"></td>
 			<td><input type="radio" id="uiautomator_expert" name="uiautomator" value="10"></td>
+			<td><input type="checkbox" id="uiautomator_checkbox" name="uiautomator" value="100"></td>
 		</tr>	
 		<tr>
-			<td colspan="5" align="center">Test Case Management systems</td>
+			<td colspan="6" align="center">Test Case Management systems</td>
 		</tr>		
 		<tr>
 			<th>Domain</th>
@@ -437,6 +467,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<th>Basic</th>
 			<th>Advanced</th>
 			<th>Expert</th>
+			<th>Commercial Exp</th>
 		</tr>
 		<tr>
 			<td>TestRail</td>
@@ -444,6 +475,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="testrail_basic"  name="testrail" value="1"></td>
 			<td><input type="radio" id="testrail_mid"    name="testrail" value="5"></td>
 			<td><input type="radio" id="testrail_expert" name="testrail" value="10"></td>
+			<td><input type="checkbox" id="testrail_checkbox" name="testrail" value="100"></td>
 		</tr>	
 		<tr>
 			<td>Zephyr</td>
@@ -451,6 +483,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="zephyr_basic"  name="zephyr" value="1"></td>
 			<td><input type="radio" id="zephyr_mid"    name="zephyr" value="5"></td>
 			<td><input type="radio" id="zephyr_expert" name="zephyr" value="10"></td>
+			<td><input type="checkbox" id="zephyr_checkbox" name="zephyr" value="100"></td>
 		</tr>	
 		<tr>
 			<td>TestLink</td>
@@ -458,6 +491,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="testlink_basic"  name="testlink" value="1"></td>
 			<td><input type="radio" id="testlink_mid"    name="testlink" value="5"></td>
 			<td><input type="radio" id="testlink_expert" name="testlink" value="10"></td>
+			<td><input type="checkbox" id="testlink_checkbox" name="testlink" value="100"></td>
 		</tr>	
 		<tr>
 			<td>Xray</td>
@@ -465,9 +499,10 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="xray_basic"  name="xray" value="1"></td>
 			<td><input type="radio" id="xray_mid"    name="xray" value="5"></td>
 			<td><input type="radio" id="xray_expert" name="xray" value="10"></td>
+			<td><input type="checkbox" id="xray_checkbox" name="xray" value="100"></td>
 		</tr>	
 		<tr>
-			<td colspan="5" align="center">Static/Dynamic analysis tools  </td>
+			<td colspan="6" align="center">Static/Dynamic analysis tools</td>
 		</tr>		
 		<tr>
 			<th>Domain</th>
@@ -475,6 +510,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<th>Basic</th>
 			<th>Advanced</th>
 			<th>Expert</th>
+			<th>Commercial Exp</th>
 		</tr>
 		<tr>
 			<td>gcc/clang sanitizers</td>
@@ -482,6 +518,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="sanitizers_basic"  name="sanitizers" value="1"></td>
 			<td><input type="radio" id="sanitizers_mid"    name="sanitizers" value="5"></td>
 			<td><input type="radio" id="sanitizers_expert" name="sanitizers" value="10"></td>
+			<td><input type="checkbox" id="sanitizers_checkbox" name="sanitizers" value="100"></td>
 		</tr>				
 		<tr>
 			<td>Clang Static Analyzer</td>
@@ -489,6 +526,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="clang_basic"  name="clang" value="1"></td>
 			<td><input type="radio" id="clang_mid"    name="clang" value="5"></td>
 			<td><input type="radio" id="clang_expert" name="clang" value="10"></td>
+			<td><input type="checkbox" id="clang_checkbox" name="clang" value="100"></td>
 		</tr>			
 		<tr>
 			<td>AFL (American Fuzzy Lop)</td>
@@ -496,6 +534,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="afl_basic"  name="afl" value="1"></td>
 			<td><input type="radio" id="afl_mid"    name="afl" value="5"></td>
 			<td><input type="radio" id="afl_expert" name="afl" value="10"></td>
+			<td><input type="checkbox" id="afl_checkbox" name="afl" value="100"></td>
 		</tr>	
 		<tr>
 			<td>Sonar</td>
@@ -503,6 +542,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="sonar_basic"  name="sonar" value="1"></td>
 			<td><input type="radio" id="sonar_mid"    name="sonar" value="5"></td>
 			<td><input type="radio" id="sonar_expert" name="sonar" value="10"></td>
+			<td><input type="checkbox" id="sonar_checkbox" name="sonar" value="100"></td>
 		</tr>		
 		<tr>
 			<td>Coverity</td>
@@ -510,6 +550,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="coverity_basic"  name="coverity" value="1"></td>
 			<td><input type="radio" id="coverity_mid"    name="coverity" value="5"></td>
 			<td><input type="radio" id="coverity_expert" name="coverity" value="10"></td>
+			<td><input type="checkbox" id="coverity_checkbox" name="coverity" value="100"></td>
 		</tr>	
 		<tr>
 			<td>Klocwork</td>
@@ -517,6 +558,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="klocwork_basic"  name="klocwork" value="1"></td>
 			<td><input type="radio" id="klocwork_mid"    name="klocwork" value="5"></td>
 			<td><input type="radio" id="klocwork_expert" name="klocwork" value="10"></td>
+			<td><input type="checkbox" id="klocwork_checkbox" name="klocwork" value="100"></td>
 		</tr>
 		<tr>
 			<td>Valgrind</td>
@@ -524,6 +566,7 @@ This will help to adjust expectations, interview questions, salary rates.
 			<td><input type="radio" id="valgrind_basic"  name="valgrind" value="1"></td>
 			<td><input type="radio" id="valgrind_mid"    name="valgrind" value="5"></td>
 			<td><input type="radio" id="valgrind_expert" name="valgrind" value="10"></td>
+			<td><input type="checkbox" id="valgrind_checkbox" name="valgrind" value="100"></td>
 		</tr>		
 		
 
