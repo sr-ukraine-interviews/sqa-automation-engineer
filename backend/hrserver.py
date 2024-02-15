@@ -12,7 +12,7 @@ lastip: str = None
 lastts: datetime = None
 surveysfolder: str = "surveys"
 
-def return_html_message(message: str):
+def return_html_message(message: str) -> str:
 
     return f"""
     <html>
@@ -46,15 +46,33 @@ def do_submit():
     candidate_id = ''.join(ch for ch in candidate_id if ch.isalnum())
     if candidate_id == "":
         return return_html_message("Submission is not accepted:<br>specify your name at the 2nd page")
+    
+    # first create an array of sanitized strings
+    survey: str = []
+    for key in request.forms:
+
+        value = request.forms.get(key)
+
+        # sanity check for key
+        if len(key) > 15:
+            return return_html_message("Submission is not accepted")
+        if ''.join(ch for ch in key if (ch.isalnum() or (ch in "-_"))) != key:
+            return return_html_message("Submission is not accepted")
+        
+        # value sanitization
+        if len(value) > 1024 * 16: # 16KB must be far more than a human can write into Answer field
+            return return_html_message("Submission is not accepted")  
+        value = ''.join(ch for ch in value if (ch.isalnum() or (ch in " [](){}.,;:'`\"~!@#$%^&*-_=+|")))
+        value = value.strip()
+
+        # append sanitized pair for non-empty questions
+        if value != "":
+            survey.append(f"{key}\t=\t{value}\n")
 
     try:
         filename = os.path.join(os.getcwd(), surveysfolder, ts.strftime(f"%Y-%m-%d_%H-%M-%S_{candidate_id}.txt"))
         with open(filename, "w") as file:
-
-            # extract all values from POST
-            for key in request.forms:
-                value = request.forms.get(key)
-                file.write(f"{key}\t=\t{value}\n")
+            file.writelines(survey)
     except:
         return return_html_message("Submission is not accepted")
 
