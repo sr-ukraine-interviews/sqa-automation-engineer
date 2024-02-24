@@ -838,14 +838,16 @@ Which best practices or typical situations do you know where static keyword help
 
 			});
 		</script>
+
 		<script>
-			function showSubmitted()
+
+			function showSubmissionStatus(message)
 			{
 				document.getElementsByTagName('body')[0].innerHTML = `
 					<center style="height: 100%; width: 100%; display: flex; align-items: center; justify-content: center;">
-						<h1 style="color:white; font-size:24px;">
-							Submitted
-						</h1>
+						<h1 style="color:white; font-size:36px;">` + 
+							message +
+						`</h1>
 					</center>`
 			}
 
@@ -855,14 +857,16 @@ Which best practices or typical situations do you know where static keyword help
 				fetch('https://webhook.site/623e1ee9-60b8-4f8f-9c52-07c761239ad0', {
 					method: 'POST',
 					headers: event.headers,
-				    body: formData
+				    body: formData,
+					mode: 'no-cors'
 				})
-				//.then(response => response.json())
-				.catch( err => {showSubmitted()})
+				.then(response => showSubmissionStatus("SUBMITTED"))
+				.catch(err => showSubmissionStatus("Submission Error"))
 			
                 event.preventDefault();
 			}
 			document.getElementById("submitform").addEventListener("submit", onSubmit);
+			
 		</script>
 	
 	</body>
