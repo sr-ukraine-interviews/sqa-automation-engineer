@@ -16,7 +16,7 @@
 	<body>
 		
 		<div class="reveal">
-			<form action="https://webhook.site/623e1ee9-60b8-4f8f-9c52-07c761239ad0" method="POST">
+			<form action="https://webhook.site/623e1ee9-60b8-4f8f-9c52-07c761239ad0" method="POST" id="submitform">
 			<input type="hidden" id="surveyId" name="surveyId" value="sqa-automation-engineer">
 			
 			<div class="slides"> 
@@ -816,7 +816,6 @@ Which best practices or typical situations do you know where static keyword help
 			</div>
 		</form>
 		</div>
-	
 
 		<script src="reveal/reveal.js"></script>
 		<!-- <script src="plugin/notes/notes.js"></script> -->
@@ -838,6 +837,32 @@ Which best practices or typical situations do you know where static keyword help
                 controlsLayout: 'bottom-right',
 
 			});
+		</script>
+		<script>
+			function showSubmitted()
+			{
+				document.getElementsByTagName('body')[0].innerHTML = `
+					<center style="height: 100%; width: 100%; display: flex; align-items: center; justify-content: center;">
+						<h1 style="color:white; font-size:24px;">
+							Submitted
+						</h1>
+					</center>`
+			}
+
+			function onSubmit(event) 
+			{
+				const formData = new FormData(document.getElementById("submitform"));
+				fetch('https://webhook.site/623e1ee9-60b8-4f8f-9c52-07c761239ad0', {
+					method: 'POST',
+					headers: event.headers,
+				    body: formData
+				})
+				//.then(response => response.json())
+				.catch( err => {showSubmitted()})
+			
+                event.preventDefault();
+			}
+			document.getElementById("submitform").addEventListener("submit", onSubmit);
 		</script>
 	
 	</body>
